@@ -9,8 +9,8 @@
 
 name: OpenWrt-CI-test
 
-# on:
-  # schedule:
+on:
+  schedule:
   #   - cron: 0 20 * * *
   # push:
   #   tags:
