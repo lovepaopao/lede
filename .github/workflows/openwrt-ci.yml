@@ -9,15 +9,15 @@
 
 name: OpenWrt-CI-test
 
-on:
-  schedule:
-    - cron: 0 20 * * *
+# on:
+  # schedule:
+  #   - cron: 0 20 * * *
   # push:
   #   tags:
   #     - '*'
-  push:
-    branches: 
-      - master
+  # push:
+  #   branches: 
+  #     - master
 
 env:
   SSH_ACTIONS: true
