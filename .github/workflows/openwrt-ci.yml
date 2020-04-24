@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: OpenWrt-CI-无ssr
+name: OpenWrt-CI-(ss+vpn)
 
 on:
   schedule:
@@ -101,6 +101,13 @@ jobs:
           CONFIG_PACKAGE_luci-app-xlnetacc=y
           CONFIG_PACKAGE_luci-app-zerotier=y
           CONFIG_PACKAGE_open-vm-tools=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-openvpn=y
+          CONFIG_PACKAGE_luci-app-openvpn-server=y
           EOF
 
           cat >> .config <<EOF
